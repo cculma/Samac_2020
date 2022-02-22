@@ -276,8 +276,6 @@ df4 <- inner_join(data_4, df4, by = "Marker1")
 
 write.csv(df4, "~/OneDrive - Washington State University (email.wsu.edu)/Samac_2020/anno1.csv", row.names = F, quote = F) # search in uniprot
 
-
-
 df5 <- read.table("~/Documents/Cesar/blup_data/Roza2019/Analysis_2021/GWAS/uniprot1.csv", sep = "\t", header = T)
 df5 <- left_join(df4, df5, by = "uniprot")
 df5 <- df5[,-c(2:4)]
